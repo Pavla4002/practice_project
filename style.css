@@ -28,15 +28,10 @@ header{
     top: 0;
     background-color: #fff;
     z-index: 2;
-
 }
 header img{
     margin-right: 2%;
     width: 220px;
-}
-.nado{
-    font-weight: bold;
-    color: #394959;
 }
 .line-title{
     width: 100%;
@@ -101,22 +96,27 @@ section{
 }
 .value-q{
     margin-top: 1%;
+    height: 5vh;
     display: flex;
-    justify-content: start;
-    align-items: flex-end;
-    height: 3vh;
+    align-items: center;
+    padding-left: 2%;
 }
-.value-q input{
-    margin-right: 1%;
+.value-q:hover{
+    background-color: #e5eafa;
+    box-shadow: 0 0 30px rgb(1 41 112 / 8%);
 }
-
+.value-q-bg{
+    background-color: #e5eafa;
+    box-shadow: 0 0 30px rgb(1 41 112 / 8%);
+}
 .title-rez{
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .block-rez{
     background-color: #F6F9FF;
     width: 100%;
-    padding: 5%;
+    padding: 2% 5%;
 }
 .block-info-rez{
     margin-top: 4%;
@@ -128,6 +128,9 @@ section{
     display: flex;
     justify-content: start;
     align-items: center;
+}
+.part-name span:nth-child(1){
+    font-size: 20px;
 }
 .part-name span:nth-child(2){
     margin-left: 2%;
@@ -144,6 +147,9 @@ section{
 }
 .line-rez span{
    color: white;
+}
+.info-profession{
+    margin-top: 1%;
 }
 .run_test{
     width: 150px;
@@ -190,11 +196,7 @@ footer{
     border-bottom: 1px #E1ECFF solid;
     margin-top:5vh;
 }
-/*.footer{*/
-/*    width: 100%;*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*}*/
+
 .footer-page2{
     width: 100%;
     padding: 0 5%;
@@ -210,6 +212,12 @@ footer{
     background-position-x: right;
     background-position-y: 10%;
 }
+.center-block{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
 .bottom{
     width: 100%;
     height: 15vh;
@@ -222,7 +230,7 @@ footer{
 .logo-footer{
     width: 350px;
 }
-.telephone-numder-email{
+.telephone-number-email{
     font-weight: bold;
 }
 .logo-contact{
@@ -250,19 +258,195 @@ footer{
 .contacts img{
     width: 15%;
 }
-/*.text-footer{*/
-/*    width: ;*/
-/*}*/
-@media only screen and (max-width: 1440px){
-    .nado{
-        font-size: 9px;
-        color: red;
+@media screen and (min-width: 2000px){
+    .all-content{
+        width: 1440px;
+        margin: 0 auto;
     }
 }
-
-@media only screen and (max-width: 425px){
-    .nado{
-        font-size: 30px;
-        color: green;
+@media screen and (max-width: 1024px){
+    .bgc-run{
+        padding: 5%;
+        width: 100%;
+        height: 50vh;
+        background-color: #F6F9FF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .buttons {
+        margin-top: 2%;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        width: 100%;
+        padding: 0 5%;
+        height: 35vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px #E1ECFF solid;
+        border-bottom: 1px #E1ECFF solid;
+        margin-top:5vh;
+    }
+}
+@media screen and (max-width: 768px){
+    .bgc-run{
+        padding: 5%;
+        width: 100%;
+        height: 50vh;
+        background-color:  #F6F9FF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .buttons {
+        margin-top: 2%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    header img{
+        margin-right: 2%;
+        width: 180px;
+    }
+    .logo-footer{
+        width: 230px;
+    }
+    .footer a, span{
+        font-size: 14px;
+    }
+    .text-footer{
+        width: 40%;
+    }
+    ul li{
+        font-size: 14px;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    .run_test{
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+    }
+    .button-form{
+        font-size: 14px;
+        width: 130px;
+        height: 35px;
+    }
+    .title-rez{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 500px){
+    .bgc-run{
+        padding: 5%;
+        width: 100%;
+        height: 65vh;
+        background-color:  #F6F9FF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .run_test{
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+    }
+    footer{
+        width: 100%;
+        padding: 0 5%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px #E1ECFF solid;
+        border-bottom: 1px #E1ECFF solid;
+        margin-top:5vh;
+    }
+    .footer-page2{
+        width: 100%;
+        padding: 3% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px #E1ECFF solid;
+        border-bottom: 1px #E1ECFF solid;
+        margin-top:5vh;
+        background-image: none;
+    }
+    .text-footer{
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url(img/земля3.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+    }
+    .center-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-footer{
+        width: 380px;
+    }
+    ul li{
+        font-size: 14px;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+}
+@media all and (max-width: 425px){
+    .bgc-run{
+        padding: 5%;
+        width: 100%;
+        height: 65vh;
+        background-color:  #F6F9FF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .logo-footer{
+        width: 330px;
+    }
+    .buttons {
+        margin-top: 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .buttons a{
+     margin-top: 2%;
+    }
+    header a{
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 375px){
+    .bgc-run{
+        padding: 5%;
+        width: 100%;
+        height: 65vh;
+        background-color: #F6F9FF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
     }
 }
