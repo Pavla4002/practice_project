@@ -282,14 +282,7 @@ footer{
     margin-right: 2%;
 }
 
-.arrow{
-    width: 15px;
-    height: 15px;
-    border-bottom: solid #2D4759 2px;
-    border-left: solid #2D4759 2px;
-    rotate: 45deg;
-    margin-left: 3%;
-}
+
 
 @media screen and (min-width: 2000px){
     .all-content{
